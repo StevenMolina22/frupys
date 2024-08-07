@@ -1,3 +1,9 @@
+---
+import HeroImage from "./HeroImage.astro";
+
+const bgImageUrl = "https://handletheheat.com/wp-content/uploads/2021/06/homemade-vanilla-ice-cream.jpg";
+
+---
 <section class="relative pb-10 pt-20 md:pt-32 lg:h-[88vh]">
   <picture
     class="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden"
@@ -41,43 +47,7 @@
       </div>
 
       <!-- Hero image -->
-      <div class="col-span-6 xl:col-span-8">
-        <div class="relative text-center md:pl-8 md:text-right">
-          <svg
-            viewBox="0 0 200 200"
-            xmlns="http://www.w3.org/2000/svg"
-            class="mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] xl:w-[35rem]"
-          >
-            <defs>
-              <clipPath id="clipping" clipPathUnits="userSpaceOnUse">
-                <path
-                  d="
-                    M 0, 100
-                    C 0, 17.000000000000004 17.000000000000004, 0 100, 0
-                    S 200, 17.000000000000004 200, 100
-                        183, 200 100, 200
-                        0, 183 0, 100
-                "
-                  fill="#9446ED"></path>
-              </clipPath>
-            </defs>
-            <g clip-path="url(#clipping)">
-              <!-- Bg image -->
-              <image
-                href="https://handletheheat.com/wp-content/uploads/2021/06/homemade-vanilla-ice-cream.jpg"
-                width="200"
-                height="200"
-                clip-path="url(#clipping)"
-              />
-            </g>
-          </svg>
-          <img
-            src="/img/hero/3D_elements.png"
-            alt=""
-            class="absolute top-0 animate-fly md:-right-[10%]"
-          />
-        </div>
-      </div>
+      <HeroImage imageUrl={bgImageUrl} />
     </div>
   </div>
 </section>

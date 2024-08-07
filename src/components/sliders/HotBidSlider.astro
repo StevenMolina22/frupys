@@ -1,0 +1,19 @@
+---
+import HotBidCard from "../cards/HotBidCard.astro";
+
+
+interface Props {
+  cards: HotBidItem[];
+}
+const {cards} = Astro.props;
+---
+
+<div class="swiper card-slider-4-columns !py-5">
+  <div class="swiper-wrapper">
+    {cards.map((card) => (
+      <div class="swiper-slide">
+         <HotBidCard {...card} />
+      </div>
+    ))}
+  </div>
+</div>
