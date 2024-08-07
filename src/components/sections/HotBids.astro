@@ -1,0 +1,28 @@
+---
+import Slider from "../Slider.astro";
+import SliderNavigation from "../SliderNavigation.astro";
+
+const bgImage = "https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/1f525.png"
+---
+
+<section class="pt-10 pb-24">
+  <div class="container">
+    <h2
+      class="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white"
+    >
+      <span
+        class="mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"
+        style=`background-image: url(${bgImage});`
+      ></span>
+      Hot Bids
+    </h2>
+
+    <div class="relative">
+      <!-- Slider -->
+      <Slider />
+
+      <!-- Slider Navigation -->
+      <SliderNavigation />
+    </div>
+  </div>
+</section>

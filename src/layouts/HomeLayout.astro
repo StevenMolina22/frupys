@@ -1,0 +1,40 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/header/Header.astro";
+
+---
+
+<!doctype html>
+<html lang="en" dir="ltr" data-scheme="light">
+  <head>
+    <!-- Dark Mode JS -->
+    <script is:inline src="/js/darkMode.bundle.js"></script>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/img/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/img/apple-touch-icon-114x114.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body
+    class="overflow-x-hidden font-body text-jacarta-500 dark:bg-jacarta-900"
+    itemscope
+    itemtype="http://schema.org/WebPage"
+  >
+    <Header />
+    <slot />
+    <Footer />
+
+    <script itemscope src="/js/app.bundle.js"></script>
+  </body>
+</html>

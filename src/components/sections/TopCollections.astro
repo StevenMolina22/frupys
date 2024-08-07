@@ -1,0 +1,207 @@
+---
+import CollectionCard from "../CollectionCard.astro";
+
+const collectionCards = [
+  {
+    id: 1,
+    avatarSrc: "/img/avatars/avatar_1.jpg",
+    isVerified: true,
+    collectionName: "NFT Funny Cat",
+    ethValue: "7,080.95",
+  },
+  {
+    id: 2,
+    avatarSrc: "/img/avatars/avatar_2.jpg",
+    isVerified: true,
+    collectionName: "Cryptopank",
+    ethValue: "6,548,133",
+  },
+  {
+    id: 3,
+    avatarSrc: "/img/avatars/avatar_3.jpg",
+    isVerified: false,
+    collectionName: "Prince Ape Planet",
+    ethValue: "4,823,927",
+  },
+  {
+    id: 4,
+    avatarSrc: "/img/avatars/avatar_4.jpg",
+    isVerified: false,
+    collectionName: "Hey Mrsmeseks",
+    ethValue: "3,186",
+  },
+  {
+    id: 5,
+    avatarSrc: "/img/avatars/avatar_5.jpg",
+    isVerified: false,
+    collectionName: "Bored Bunny",
+    ethValue: "3,027 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 6,
+    avatarSrc: "/img/avatars/avatar_6.gif",
+    isVerified: false,
+    collectionName: "Wow Frens",
+    ethValue: "2,586 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 7,
+    avatarSrc: "/img/avatars/avatar_7.jpg",
+    isVerified: true,
+    collectionName: "Origin Morish",
+    ethValue: "2,347.85 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 8,
+    avatarSrc: "/img/avatars/avatar_8.jpg",
+    isVerified: true,
+    collectionName: "Superdo",
+    ethValue: "2,115.71 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 9,
+    avatarSrc: "/img/avatars/avatar_9.jpg",
+    isVerified: false,
+    collectionName: "NFT stars",
+    ethValue: "2,027 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 10,
+    avatarSrc: "/img/avatars/avatar_10.jpg",
+    isVerified: true,
+    collectionName: "Asumitsu",
+    ethValue: "1,989.70 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 11,
+    avatarSrc: "/img/avatars/avatar_11.jpg",
+    isVerified: false,
+    collectionName: "Pank Skull",
+    ethValue: "1,726.70 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 12,
+    avatarSrc: "/img/avatars/avatar_12.jpg",
+    isVerified: false,
+    collectionName: "Lazy Panda",
+    ethValue: "1,589.03 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 13,
+    avatarSrc: "/img/avatars/avatar_13.jpg",
+    isVerified: true,
+    collectionName: "Arcahorizons",
+    ethValue: "1,157 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 14,
+    avatarSrc: "/img/avatars/avatar_14.jpg",
+    isVerified: false,
+    collectionName: "Sussygirl",
+    ethValue: "1,030 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 15,
+    avatarSrc: "/img/avatars/avatar_15.jpg",
+    isVerified: true,
+    collectionName: "Smilebin",
+    ethValue: "999.51 ETH",
+    href: "collection.html"
+  },
+  {
+    id: 16,
+    avatarSrc: "/img/avatars/avatar_16.jpg",
+    isVerified: false,
+    collectionName: "Pankysmoke",
+    ethValue: "875.65 ETH",
+    href: "collection.html"
+  }
+];
+---
+
+<section class="relative py-24 dark:bg-jacarta-800">
+  <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+    <img src="/img/gradient_light.jpg" alt="gradient" class="h-full w-full" />
+  </picture>
+  <div class="container">
+    <div
+      class="mb-12 text-center font-display text-3xl text-jacarta-700 dark:text-white"
+    >
+      <h2 class="inline">Top collections over</h2>
+      <div class="dropdown inline cursor-pointer">
+        <button
+          class="dropdown-toggle inline-flex items-center text-accent"
+          type="button"
+          id="collectionSort"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          last 7 days
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            class="h-8 w-8 fill-accent"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <path
+              d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="dropdown-menu z-10 hidden min-w-[200px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl dark:bg-jacarta-800"
+          aria-labelledby="collectionSort"
+        >
+          <a
+            class="dropdown-item block rounded-xl px-5 py-2 text-sm transition-colors hover:bg-jacarta-50 dark:hover:bg-jacarta-600"
+            href="#">Last 24 Hours</a
+          >
+          <a
+            class="dropdown-item block rounded-xl px-5 py-2 text-sm transition-colors hover:bg-jacarta-50 dark:hover:bg-jacarta-600"
+            href="#">Last 7 Days</a
+          >
+          <a
+            class="dropdown-item block rounded-xl px-5 py-2 text-sm transition-colors hover:bg-jacarta-50 dark:hover:bg-jacarta-600"
+            href="#">Last 30 Days</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-[1.875rem] lg:grid-cols-4"
+    >
+      {
+        collectionCards.map((card) => (
+          <CollectionCard
+            id={card.id}
+            avatarSrc={card.avatarSrc}
+            isVerified={card.isVerified}
+            collectionName={card.collectionName}
+            ethValue={card.ethValue}
+          />
+        ))
+      }
+
+    </div>
+    <div class="mt-10 text-center">
+      <a
+        href="rankings.html"
+        class="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+        >Go to Rankings</a
+      >
+    </div>
+  </div>
+</section>

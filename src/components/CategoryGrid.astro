@@ -1,0 +1,102 @@
+---
+import CategoryCard from "./CategoryCard.astro";
+
+const articles = [
+  {
+    title: "Flourishing Cat #180",
+    imageSrc: "/img/products/item_5.jpg",
+    imageAlt: "item 5",
+    likes: 15,
+    creatorAvatar: "/img/avatars/creator_1.png",
+    ownerAvatar: "/img/avatars/owner_1.png",
+    price: "8.49 ETH",
+    supply: "2/8",
+  },
+  {
+    title: "Amazing NFT art",
+    imageSrc: "/img/products/item_4.jpg",
+    imageAlt: "item 4",
+    likes: 188,
+    creatorAvatar: "/img/avatars/creator_2.png",
+    ownerAvatar: "/img/avatars/owner_2.png",
+    price: "5.9 ETH",
+    supply: "1/7",
+  },
+  {
+    title: "SwagFox#133",
+    imageSrc: "/img/products/item_7.jpg",
+    imageAlt: "item 7",
+    likes: 160,
+    creatorAvatar: "/img/avatars/creator_3.png",
+    ownerAvatar: "/img/avatars/owner_3.png",
+    price: "0.078 ETH",
+    supply: "1/3"
+  },
+  {
+    title: "Splendid Girl",
+    imageSrc: "/img/products/item_6.jpg",
+    imageAlt: "item 6",
+    likes: 159,
+    creatorAvatar: "/img/avatars/creator_4.png",
+    ownerAvatar: "/img/avatars/owner_4.png",
+    price: "10 ETH",
+    supply: "2/3"
+  },
+  {
+    title: "Monkeyme#155",
+    imageSrc: "/img/products/item_8.jpg",
+    imageAlt: "item 8",
+    likes: 32,
+    creatorAvatar: "/img/avatars/creator_3.png",
+    ownerAvatar: "/img/avatars/owner_5.png",
+    price: "From 5 FLOW",
+    supply: "1/1"
+  },
+  {
+    title: "Jedidia#149",
+    imageSrc: "/img/products/item_9.jpg",
+    imageAlt: "item 9",
+    likes: 25,
+    creatorAvatar: "/img/avatars/creator_6.png",
+    ownerAvatar: "/img/avatars/owner_4.png",
+    price: "0.16 ETH",
+    supply: "1/1"
+  },
+  {
+    title: "Artof Eve",
+    imageSrc: "/img/products/item_10.jpg",
+    imageAlt: "item 10",
+    likes: 55,
+    creatorAvatar: "/img/avatars/creator_2.png",
+    ownerAvatar: "/img/avatars/owner_7.png",
+    price: "0.13 FLOW",
+    supply: "1/1"
+  },
+  {
+    title: "Asuna #1649",
+    imageSrc: "/img/products/item_11.gif",
+    imageAlt: "item 11",
+    likes: 70,
+    creatorAvatar: "/img/avatars/creator_8.png",
+    ownerAvatar: "/img/avatars/owner_5.png",
+    price: "0.8 ETH",
+    supply: "1/1"
+  },
+];
+---
+<div class="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4">
+  {
+    articles.map((article) => (
+      <CategoryCard
+        title={article.title}
+        imageSrc={article.imageSrc}
+        imageAlt={article.imageAlt}
+        likes={article.likes}
+        creatorAvatar={article.creatorAvatar}
+        ownerAvatar={article.ownerAvatar}
+        price={article.price}
+        supply={article.supply}
+      />
+    ))
+  }
+</div>

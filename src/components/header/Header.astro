@@ -1,0 +1,68 @@
+---
+import Actions from "./Actions.astro";
+import MobileMenuActions from "./MobileMenuActions.astro";
+import MobileMenuClose from "./MobileMenuClose.astro";
+import MobileSearch from "./MobileSearch.astro";
+import MobileWalletSocials from "./MobileWalletSocials.astro";
+import PrimaryNav from "./PrimaryNav.astro";
+import Search from "./Search.astro";
+---
+
+<header
+  class="fixed top-0 z-20 w-full backdrop-blur transition-colors"
+>
+  <div class="flex items-center px-6 py-6 xl:px-24">
+    <!-- Logo -->
+    <a href="index.html" class="shrink-0">
+      <img
+        src="/img/logo.png"
+        class="max-h-7 dark:hidden"
+        alt="Xhibiter | NFT Marketplace"
+      />
+      <img
+        src="/img/logo_white.png"
+        class="hidden max-h-7 dark:block"
+        alt="Xhibiter | NFT Marketplace"
+      />
+    </a>
+
+    <!-- Search -->
+    <Search />
+
+    <!-- Menu / Actions -->
+    <div
+      class="js-mobile-menu invisible lg:visible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 dark:bg-jacarta-800 lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent"
+    >
+      <!-- Mobile Logo / Menu Close -->
+      <div
+        class="t-0 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 dark:bg-jacarta-800 lg:hidden"
+      >
+        <!-- Mobile Logo -->
+        <a href="index.html" class="shrink-0">
+          <img
+            src="/img/logo.png"
+            class="max-h-7 dark:hidden"
+            alt="Xhibiter | NFT Marketplace"
+          />
+          <img
+            src="/img/logo_white.png"
+            class="hidden max-h-7 dark:block"
+            alt="Xhibiter | NFT Marketplace"
+          />
+        </a>
+
+        <MobileMenuClose />
+      </div>
+
+      <MobileSearch />
+
+      <PrimaryNav />
+
+      <MobileWalletSocials />
+
+      <Actions />
+    </div>
+
+    <MobileMenuActions />
+  </div>
+</header>
