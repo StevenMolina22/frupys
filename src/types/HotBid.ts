@@ -1,7 +1,7 @@
 interface HotBidItem {
   title: string;
   image: string;
-  price: string;
-  currentBid: string;
+  price: number;
+  currentBid: number;
   likes: number;
 }

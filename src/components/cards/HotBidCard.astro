@@ -5,8 +5,8 @@ import Heart from "../icons/Heart.astro";
 interface Props {
   title: string;
   image: string;
-  price: string;
-  currentBid: string;
+  price: number;
+  currentBid: number;
   likes: number;
 }
 
@@ -45,8 +45,8 @@ const { title, image, price, currentBid, likes } = Astro.props;
     </span>
   </div>
   <div class="mt-2 text-sm">
-    <span class="dark:text-jacarta-300">Current Bid</span>
-    <span class="text-jacarta-700 dark:text-jacarta-100">{currentBid}</span>
+    <span class="dark:text-jacarta-300">Precio: </span>
+    <span class="text-jacarta-700 dark:text-jacarta-100">$ {currentBid}</span>
   </div>
   <div class="mt-8 flex items-center justify-between">
     <button
@@ -55,12 +55,12 @@ const { title, image, price, currentBid, likes } = Astro.props;
       data-bs-toggle="modal"
       data-bs-target="#placeBidModal"
     >
-      Place bid
+      Lo quiero
     </button>
     <div class="flex items-center space-x-1">
       <span
         class="js-likes relative cursor-pointer before:absolute before:h-4 before:w-4 before:bg-[url('./img/heart-fill.svg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-0"
-        data-tippy-content="Favorite"
+        data-tippy-content="Favorito1"
       >
         <Heart />
       </span>

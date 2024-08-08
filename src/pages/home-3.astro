@@ -1,28 +1,27 @@
 ---
 import PlaceBidModal from "../components/modals/PlaceBidModal.astro";
 import WalletModal from "../components/modals/WalletModal.astro";
+import BrowseByCategory from "../components/sections/BrowseByCategory.astro";
+import DropsSellersBuyers from "../components/sections/DropsSellersBuyers.astro";
 import FeaturedCollections from "../components/sections/FeaturedCollections.astro";
+import Hero3 from "../components/sections/Hero3.astro";
 import HotBids from "../components/sections/HotBids.astro";
-import LiveAuctions from "../components/sections/LiveAuctions.astro";
 import Newsletter from "../components/sections/Newsletter.astro";
 import Partners from "../components/sections/Partners.astro";
-import TopCollections from "../components/sections/TopCollections.astro";
-import Home2Hero from "../layouts/Hero2.astro";
 import HomeLayout from "../layouts/HomeLayout.astro";
 ---
 
 <HomeLayout>
   <main>
-    <Home2Hero />
+    <Hero3 />
+    <BrowseByCategory />
     <HotBids />
-    <TopCollections />
-    <LiveAuctions />
-    <Newsletter />
+    <DropsSellersBuyers />
     <FeaturedCollections />
+    <Newsletter />
     <Partners />
   </main>
 
   <WalletModal />
   <PlaceBidModal />
-  <script is:inline src="/js/countdown.bundle.js"></script>
 </HomeLayout>

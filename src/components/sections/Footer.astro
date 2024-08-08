@@ -1,10 +1,10 @@
 ---
-import CompanyLogo from "./icons/CompanyLogo.astro";
-import Discord from "./icons/Discord.astro";
-import Facebook from "./icons/Facebook.astro";
-import Instagram from "./icons/Instagram.astro";
-import Tiktok from "./icons/Tiktok.astro";
-import Twitter from "./icons/Twitter.astro";
+import CompanyLogo from "../icons/CompanyLogo.astro";
+import Discord from "../icons/Discord.astro";
+import Facebook from "../icons/Facebook.astro";
+import Instagram from "../icons/Instagram.astro";
+import Tiktok from "../icons/Tiktok.astro";
+import Twitter from "../icons/Twitter.astro";
 
 const socialLinks = [
   { component: Facebook, href: "#" },
@@ -15,29 +15,28 @@ const socialLinks = [
 ];
 
 const marketPlaceLinks = [
-  { label: "All NFTs", href: "#" },
-  { label: "Art", href: "#" },
-  { label: "Music", href: "#" },
-  { label: "Domain Names", href: "#" },
-  { label: "Collectibles", href: "#" },
-  { label: "Virtual World", href: "#" },
+  { label: "Todos los Sabores", href: "#" },
+  { label: "Clasicos", href: "#" },
+  { label: "Estacionales", href: "#" },
+  { label: "Sin Lacteos", href: "#" },
+  { label: "Toppings", href: "#" },
+  { label: "Especiales", href: "#" },
 ];
 
 const companyLinks = [
-  { label: "Explore", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Contact Us", href: "#" },
-  { label: "Our Blog", href: "#" },
+  { label: "Menu", href: "#" },
+  { label: "Sobre Nosotros", href: "#" },
+  { label: "Contactanos", href: "#" },
+  { label: "Nuestro Blog", href: "#" },
   { label: "FAQ", href: "#" },
 ];
 
 const myAccountLinks = [
-  { label: "Authors", href: "#" },
-  { label: "Collection", href: "#" },
-  { label: "Author Profile", href: "#" },
-  { label: "Create Item", href: "#" },
+  { label: "Mis Pedidos", href: "#" },
+  { label: "Favoritos", href: "#" },
+  { label: "Perfil", href: "#" },
+  { label: "Crear Pedido", href: "#" },
 ];
-
 ---
 
 <footer class="page-footer bg-white dark:bg-jacarta-900">
@@ -49,8 +48,7 @@ const myAccountLinks = [
           <CompanyLogo />
         </a>
         <p class="mb-12 dark:text-jacarta-300">
-          Create, sell and collect truly rare digital artworks. Powered by
-          blockchain technology.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, provident.
         </p>
         <!-- Socials -->
         <div class="flex space-x-5">
@@ -66,7 +64,7 @@ const myAccountLinks = [
 
       <div class="col-span-full sm:col-span-3 md:col-span-2 md:col-start-7">
         <h3 class="mb-6 font-display text-sm text-jacarta-700 dark:text-white">
-          Marketplace
+          Tienda
         </h3>
         <ul class="flex flex-col space-y-1 dark:text-jacarta-300">
           {
@@ -82,7 +80,7 @@ const myAccountLinks = [
 
       <div class="col-span-full sm:col-span-3 md:col-span-2">
         <h3 class="mb-6 font-display text-sm text-jacarta-700 dark:text-white">
-          Company
+          Compania
         </h3>
         <ul class="flex flex-col space-y-1 dark:text-jacarta-300">
           {
@@ -98,7 +96,7 @@ const myAccountLinks = [
 
       <div class="col-span-full sm:col-span-3 md:col-span-2">
         <h3 class="mb-6 font-display text-sm text-jacarta-700 dark:text-white">
-          My Account
+          Mi cuenta
         </h3>
         <ul class="flex flex-col space-y-1 dark:text-jacarta-300">
           {
