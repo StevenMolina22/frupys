@@ -1,0 +1,94 @@
+---
+import DarkMode from "../icons/DarkMode.astro";
+import Discord from "../icons/Discord.astro";
+import Facebook from "../icons/Facebook.astro";
+import Instagram from "../icons/Instagram.astro";
+import LightMode from "../icons/LightMode.astro";
+import Profile from "../icons/Profile.astro";
+import Tag from "../icons/Tag.astro";
+import Tiktok from "../icons/Tiktok.astro";
+import Twitter from "../icons/Twitter.astro";
+import MobileNav from "./Atoms/MobileNav.astro";
+import MobileSearch from "./Atoms/MobileSearch.astro";
+import PrimaryNav from "./Atoms/PrimaryNav.astro";
+import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
+---
+
+<div
+  class="js-mobile-menu invisible lg:visible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 dark:bg-jacarta-800 lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent"
+>
+  <MobileNav />
+  <!-- Mobile Logo / Menu Close -->
+  <MobileSearch />
+  <PrimaryNav />
+
+  <!-- Mobile Connect Wallet / Socials -->
+  <div class="mt-10 w-full lg:hidden">
+    <a
+      href="#"
+      class="js-wallet block w-full rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
+      data-bs-toggle="modal"
+      data-bs-target="#walletModal"
+    >
+      Connect Wallet
+    </a>
+
+    <hr class="my-5 h-px border-0 bg-jacarta-100 dark:bg-jacarta-600" />
+
+    <!-- Socials -->
+    <div class="flex items-center justify-center space-x-5">
+      <a href="#" class="group">
+        <Facebook />
+      </a>
+      <a href="#" class="group">
+        <Twitter />
+      </a>
+      <a href="#" class="group">
+        <Discord />
+      </a>
+      <a href="#" class="group">
+        <Instagram />
+      </a>
+      <a href="#" class="group">
+        <Tiktok />
+      </a>
+    </div>
+  </div>
+
+  <!-- Actions -->
+  <div class="ml-8 hidden lg:flex xl:ml-12">
+    <!-- Wallet -->
+    <a
+      href="#"
+      class="js-wallet group flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent dark:border-transparent dark:bg-white/[.15] dark:hover:bg-accent"
+      data-bs-toggle="modal"
+      data-bs-target="#walletModal"
+      aria-label="wallet"
+    >
+      <Tag />
+    </a>
+
+    <!-- Profile -->
+    <div class="js-nav-dropdown group-dropdown relative">
+      <button
+        class="dropdown-toggle group ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent dark:border-transparent dark:bg-white/[.15] dark:hover:bg-accent"
+        id="profileDropdown"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="profile"
+      >
+        <Profile />
+      </button>
+      <ProfileDropdown />
+    </div>
+
+    <!-- Dark Mode -->
+    <a
+      href="#"
+      class="js-dark-mode-trigger group ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent dark:border-transparent dark:bg-white/[.15] dark:hover:bg-accent"
+    >
+      <DarkMode />
+      <LightMode />
+    </a>
+  </div>
+</div>
