@@ -1,56 +1,56 @@
 ---
-import BrowseByCategorySlider from "../sliders/BrowseByCategorySlider.astro";
+import BrowseByCategoryCard from "../cards/BrowseByCategoryCard.astro";
 
 const cards = [
-    {
-        src: "/img/ice-cream/1.png",
-        title: "Ice Cream 1",
-        color: "green",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/2.png",
-        title: "Ice Cream 2",
-        color: "orange",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/3.png",
-        title: "Ice Cream 3",
-        color: "blue",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/4.png",
-        title: "Ice Cream 4",
-        color: "green",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/5.png",
-        title: "Ice Cream 5",
-        color: "orange",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/6.png",
-        title: "Ice Cream 6",
-        color: "blue",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/1.png",
-        title: "Ice Cream 7",
-        color: "green",
-        href: "collections.html",
-    },
-    {
-        src: "/img/ice-cream/2.png",
-        title: "Ice Cream 8",
-        color: "orange",
-        href: "collections.html",
-    },
-]
+  {
+    src: "/img/ice-cream/1.png",
+    title: "Ice Cream 1",
+    color: "green",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/2.png",
+    title: "Ice Cream 2",
+    color: "orange",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/3.png",
+    title: "Ice Cream 3",
+    color: "blue",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/4.png",
+    title: "Ice Cream 4",
+    color: "green",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/5.png",
+    title: "Ice Cream 5",
+    color: "orange",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/6.png",
+    title: "Ice Cream 6",
+    color: "blue",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/1.png",
+    title: "Ice Cream 7",
+    color: "green",
+    href: "collections.html",
+  },
+  {
+    src: "/img/ice-cream/2.png",
+    title: "Ice Cream 8",
+    color: "orange",
+    href: "collections.html",
+  },
+];
 ---
 
 <section class="py-24">
@@ -61,5 +61,18 @@ const cards = [
   </h2>
 
   <!-- Slider -->
-  <BrowseByCategorySlider cards={cards}/>
+  <div class="relative">
+    <div class="swiper centered-slider !pb-5">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {
+          cards.map((card) => (
+            <div class="swiper-slide">
+              <BrowseByCategoryCard {...card} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
 </section>

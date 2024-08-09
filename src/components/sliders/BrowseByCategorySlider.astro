@@ -14,18 +14,3 @@ interface Props {
 
 const { cards } = Astro.props
 ---
-<div class="relative">
-  <div class="swiper centered-slider !pb-5">
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      {
-        cards.map((card: CategoryCard) => (
-          <div class="swiper-slide">
-              <BrowseByCategoryCard {...card} />
-          </div>
-        ))
-      }
-
-    </div>
-  </div>
-</div>
