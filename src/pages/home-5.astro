@@ -1,0 +1,27 @@
+---
+import BuyNowModal from "../components/modals/BuyNowModal.astro";
+import PlaceBidModal from "../components/modals/PlaceBidModal.astro";
+import WalletModal from "../components/modals/WalletModal.astro";
+import CTADownloadApp from "../components/sections/CTADownloadApp.astro";
+import DropsSellersBuyers from "../components/sections/DropsSellersBuyers.astro";
+import FeaturedCollections from "../components/sections/FeaturedCollections.astro";
+import Hero5 from "../components/sections/Hero5.astro";
+import Process from "../components/sections/Process.astro";
+import TrendingCategories from "../components/sections/TrendingCategories.astro";
+import HomeLayout from "../layouts/HomeLayout.astro";
+---
+
+<HomeLayout>
+  <main>
+    <Hero5 />
+    <Process />
+    <FeaturedCollections />
+    <DropsSellersBuyers />
+    <TrendingCategories />
+    <CTADownloadApp />
+  </main>
+
+  <WalletModal />
+  <BuyNowModal />
+  <PlaceBidModal />
+</HomeLayout>
