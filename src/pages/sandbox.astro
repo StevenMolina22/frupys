@@ -1,16 +1,12 @@
 ---
-import MobileSearch from "../components/layout/header/MobileSearch.astro";
-import PrimaryNav from "../components/layout/header/PrimaryNav.astro";
+import MiniSandbox from "../components/MiniSandbox.svelte";
 import HomeLayout from "../layouts/HomeLayout.astro";
 ---
 
 <HomeLayout>
   <div class="h-40 text-white carechimba">hello world mf</div>
+  <MiniSandbox client:load />
 
-  <!-- <div class="carechimba2 ">
-    <PrimaryNav />
-    <MobileSearch />
-  </div> -->
 </HomeLayout>
 
 <style>

@@ -1,17 +1,23 @@
 ---
-import CompanyLogo from "../../icons/CompanyLogo.astro";
-import MenuActions from "./MenuActions.astro";
+import MenuActions from "./MenuActions.svelte";
 import MobileMenuActions from "./MobileMenuActions.astro";
 ---
 
-<header
-  class="fixed top-0 z-20 w-full backdrop-blur transition-colors"
->
+<header class="fixed top-0 z-20 w-full backdrop-blur transition-colors">
   <div class="flex items-center px-6 py-6 xl:px-24">
     <a href="index.html" class="shrink-0">
-      <CompanyLogo />
+      <img
+        src="/img/logo.png"
+        class="max-h-7 dark:hidden"
+        alt="Xhibiter | NFT Marketplace"
+      />
+      <img
+        src="/img/logo_white.png"
+        class="hidden max-h-7 dark:block"
+        alt="Xhibiter | NFT Marketplace"
+      />
     </a>
-    <MenuActions />
+    <MenuActions client:load/>
     <MobileMenuActions />
   </div>
 </header>
