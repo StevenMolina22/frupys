@@ -1,0 +1,31 @@
+---
+import BrowseByCategoryCard from "../cards/BrowseByCategoryCard.astro"
+
+type CategoryCard = {
+    src: string,
+    title: string,
+    color: string,
+    href: string,
+}
+
+interface Props {
+    cards: CategoryCard[]
+}
+
+const { cards } = Astro.props
+---
+<div class="relative">
+  <div class="swiper centered-slider !pb-5">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      {
+        cards.map((card: CategoryCard) => (
+          <div class="swiper-slide">
+              <BrowseByCategoryCard {...card} />
+          </div>
+        ))
+      }
+
+    </div>
+  </div>
+</div>
