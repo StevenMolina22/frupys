@@ -12,16 +12,59 @@ import MobileNav from "./Atoms/MobileNav.astro";
 import MobileSearch from "./Atoms/MobileSearch.astro";
 import PrimaryNav from "./Atoms/PrimaryNav.astro";
 import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
+
+const baseClasses = "ml-auto items-center z-10 lg:relative lg:flex";
+const colorsClasses =
+  "bg-red-500 lg:bg-transparent dark:bg-red-500 dark:lg:bg-transparent lg:opacity-100 bg-jacarta-800";
+const mobileClasses = "fixed inset-x-0 top-0 h-screen lg:h-auto";
 ---
 
 <div
-  class="js-mobile-menu invisible lg:visible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 dark:bg-jacarta-800 lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent"
+  class="t-0 fixed left-0 z-20 flex w-full items-center justify-between  p-6  lg:hidden"
+  id="mobileMenuBar"
 >
-  <MobileNav />
+  <!-- Mobile Logo -->
+  <a href="index.html" class="shrink-0">
+    <img
+      src="img/logo.png"
+      class="max-h-7 dark:hidden"
+      alt="Xhibiter | NFT Marketplace"
+    />
+    <img
+      src="img/logo_white.png"
+      class="hidden max-h-7 dark:block"
+      alt="Xhibiter | NFT Marketplace"
+    />
+  </a>
+  <!-- Mobile Menu Toggle -->
+  <button
+    id="mobileMenuToggle"
+    class="js-mobile-close group ml-2 flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent dark:border-transparent dark:bg-white/[.15] dark:hover:bg-accent"
+    aria-label="toggle mobile menu"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      class="h-4 w-4 fill-jacarta-700 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
+    >
+      <path fill="none" d="M0 0h24v24H0z"></path>
+      <path
+        d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+      ></path>
+    </svg>
+  </button>
+</div>
+
+<div
+  class={`${baseClasses} ${colorsClasses} ${mobileClasses} invisible lg:visible px-4`}
+  id="navbar"
+>
   <!-- Mobile Logo / Menu Close -->
+  <MobileNav />
   <MobileSearch />
   <PrimaryNav />
-
   <!-- Mobile Connect Wallet / Socials -->
   <div class="mt-10 w-full lg:hidden">
     <a
@@ -32,9 +75,7 @@ import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
     >
       Connect Wallet
     </a>
-
     <hr class="my-5 h-px border-0 bg-jacarta-100 dark:bg-jacarta-600" />
-
     <!-- Socials -->
     <div class="flex items-center justify-center space-x-5">
       <a href="#" class="group">
@@ -54,7 +95,6 @@ import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
       </a>
     </div>
   </div>
-
   <!-- Actions -->
   <div class="ml-8 hidden lg:flex xl:ml-12">
     <!-- Wallet -->
@@ -67,7 +107,6 @@ import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
     >
       <Tag />
     </a>
-
     <!-- Profile -->
     <div class="js-nav-dropdown group-dropdown relative">
       <button
@@ -81,7 +120,6 @@ import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
       </button>
       <ProfileDropdown />
     </div>
-
     <!-- Dark Mode -->
     <a
       href="#"
@@ -92,3 +130,44 @@ import ProfileDropdown from "./Atoms/ProfileDropdown.astro";
     </a>
   </div>
 </div>
+
+<script>
+// Ensure the code runs after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Use type assertion for getElementById calls to inform TypeScript these elements will exist
+  const mobileMenuToggle = document.getElementById('mobileMenuToggle') as HTMLButtonElement;
+  const navbar = document.getElementById('navbar') as HTMLDivElement;
+  const mobileMenuBar = document.getElementById('mobileMenuBar') as HTMLDivElement;
+
+  // SVG paths for menu and close icons
+  const menuIconPath = '<path fill="none" d="M0 0h24v24H0z"></path><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>';
+  const closeIconPath = '<path fill="none" d="M0 0h24v24H0z"></path><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path>';
+
+  const toggleNavbar = () => {
+    navbar.classList.toggle('invisible');
+    const svgElement = mobileMenuToggle.querySelector('svg');
+    if (svgElement) {
+      svgElement.innerHTML = navbar.classList.contains('invisible') ? menuIconPath : closeIconPath;
+    }
+  };
+
+  mobileMenuToggle.addEventListener('click', toggleNavbar);
+
+  // Close navbar when clicking outside
+  document.addEventListener('click', (event: MouseEvent) => {
+    const target = event.target as Node;
+    const isClickInsideNavbar = navbar.contains(target);
+    const isClickOnToggle = mobileMenuToggle.contains(target);
+    const isClickOnMenuBar = mobileMenuBar.contains(target);
+
+    if (!isClickInsideNavbar && !isClickOnToggle && !isClickOnMenuBar && !navbar.classList.contains('invisible')) {
+      navbar.classList.add('invisible');
+      // Reset to menu icon
+      const svgElement = mobileMenuToggle.querySelector('svg');
+      if (svgElement) {
+        svgElement.innerHTML = menuIconPath;
+      }
+    }
+  });
+});
+</script>
