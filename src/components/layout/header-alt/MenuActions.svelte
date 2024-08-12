@@ -23,13 +23,13 @@
   <!-- Mobile Logo -->
   <a href="index.html" class="shrink-0">
     <img
-      src="img/logo.png"
-      class="max-h-7 dark:hidden"
+      src="img/logo-light.png"
+      class="h-10 dark:hidden"
       alt="Xhibiter | NFT Marketplace"
     />
     <img
-      src="img/logo_white.png"
-      class="hidden max-h-7 dark:block"
+      src="img/logo-dark.png"
+      class="hidden h-10 dark:block"
       alt="Xhibiter | NFT Marketplace"
     />
   </a>

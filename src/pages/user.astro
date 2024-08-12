@@ -1,0 +1,100 @@
+---
+import BuyNowModal from "../components/modals/BuyNowModal.astro";
+import WalletModal from "../components/modals/WalletModal.astro";
+import ProfileSection from "../components/sections/ProfileSection.astro";
+import CategoryGrid from "../components/sliders/CategoryGrid.astro";
+import CollectionsSlider from "../components/sliders/CollectionSlider.astro";
+import RecordsFilterList from "../components/sliders/RecordsFilterList.astro";
+import UserTabNav from "../components/sliders/UserTabNav.astro";
+import UserFilters from "../components/UserFilters.astro";
+import HomeLayout from "../layouts/HomeLayout.astro";
+---
+
+<HomeLayout>
+  <main class="pt-[5.5rem] lg:pt-24">
+    <!-- Banner -->
+    <div class="relative">
+      <img
+        src="img/user/banner.jpg"
+        alt="banner"
+        class="h-[18.75rem] object-cover"
+      />
+    </div>
+    <!-- end banner -->
+    <ProfileSection />
+    <!-- Collection -->
+    <section class="relative py-24 pt-20">
+      <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
+        <img
+          src="img/gradient_light.jpg"
+          alt="gradient"
+          class="h-full w-full"
+        />
+      </picture>
+      <div class="container">
+        <!-- Tabs Nav -->
+        <UserTabNav />
+        <div class="tab-content">
+          <!-- On Sale Tab -->
+          <div
+            class="tab-pane fade show active"
+            id="on-sale"
+            role="tabpanel"
+            aria-labelledby="on-sale-tab"
+          >
+            <UserFilters />
+            <CategoryGrid />
+          </div>
+
+          <!-- Owned Tab -->
+          <div
+            class="tab-pane fade"
+            id="owned"
+            role="tabpanel"
+            aria-labelledby="owned-tab"
+          >
+            <UserFilters />
+            <CategoryGrid />
+          </div>
+
+          <!-- Created Tab -->
+          <div
+            class="tab-pane fade"
+            id="created"
+            role="tabpanel"
+            aria-labelledby="created-tab"
+          >
+            <UserFilters />
+            <CategoryGrid />
+          </div>
+
+          <!-- Collections Tab -->
+          <div
+            class="tab-pane fade"
+            id="collections"
+            role="tabpanel"
+            aria-labelledby="collections-tab"
+          >
+            <CollectionsSlider />
+          </div>
+          <!-- end collections tab -->
+
+          <!-- Activity Tab -->
+          <div
+            class="tab-pane fade"
+            id="activity"
+            role="tabpanel"
+            aria-labelledby="activity-tab"
+          >
+            <RecordsFilterList />
+          </div>
+          <!-- end activity tab -->
+        </div>
+      </div>
+    </section>
+    <!-- end collection -->
+  </main>
+
+  <WalletModal />
+  <BuyNowModal />
+</HomeLayout>
