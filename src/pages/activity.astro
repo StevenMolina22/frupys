@@ -1,0 +1,15 @@
+---
+import BuyNowModal from "../components/modals/BuyNowModal.astro";
+import WalletModal from "../components/modals/WalletModal.astro";
+import ActivitySection from "../components/sections/ActivitySection.astro";
+import HomeLayout from "../layouts/HomeLayout.astro";
+---
+
+<HomeLayout>
+  <main>
+    <ActivitySection />
+  </main>
+
+  <WalletModal />
+  <BuyNowModal />
+</HomeLayout>
