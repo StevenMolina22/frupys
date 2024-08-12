@@ -34,7 +34,7 @@
       >
         <li>
           <a
-            href="index.html"
+            href="/"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -42,19 +42,10 @@
             >
           </a>
         </li>
+
         <li>
           <a
-            href="index-rtl.html"
-            class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
-          >
-            <span class="font-display text-sm text-jacarta-700 dark:text-white"
-              >Home 1 RTL</span
-            >
-          </a>
-        </li>
-        <li>
-          <a
-            href="home-2.html"
+            href="home-2"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -64,7 +55,7 @@
         </li>
         <li>
           <a
-            href="home-3.html"
+            href="home-3"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -74,7 +65,7 @@
         </li>
         <li>
           <a
-            href="home-4.html"
+            href="home-4"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-accent">Home 4</span>
@@ -82,7 +73,7 @@
         </li>
         <li>
           <a
-            href="home-5.html"
+            href="home-5"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -92,7 +83,7 @@
         </li>
         <li>
           <a
-            href="home-6.html"
+            href="home-6"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -100,16 +91,7 @@
             >
           </a>
         </li>
-        <li>
-          <a
-            href="home-7.html"
-            class="flex items-center justify-between rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
-          >
-            <span class="font-display text-sm text-jacarta-700 dark:text-white"
-              >Crypto Consultant</span
-            >
-          </a>
-        </li>
+
 
       </ul>
     </li>
@@ -141,7 +123,7 @@
     </li>
     <li class="js-nav-dropdown nav-item dropdown group relative">
       <a
-        href="collections.html"
+        href="collections"
         class="dropdown-toggle flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
         id="navDropdown-3"
         aria-expanded="false"
@@ -169,7 +151,7 @@
       >
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-light-base p-[0.375rem]">
@@ -193,7 +175,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#E4FCF4] p-[0.375rem]">
@@ -217,7 +199,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#FDF7EE] p-[0.375rem]">
@@ -241,7 +223,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#F2EEFF] p-[0.375rem]">
@@ -265,7 +247,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#FFEEFA] p-[0.375rem]">
@@ -287,7 +269,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#EAF2FE] p-[0.375rem]">
@@ -311,7 +293,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#EBEDFF] p-[0.375rem]">
@@ -335,7 +317,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#F5FFED] p-[0.375rem]">
@@ -359,7 +341,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#FFEEEE] p-[0.375rem]">
@@ -383,7 +365,7 @@
         </li>
         <li>
           <a
-            href="collections.html"
+            href="collections"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="mr-3 rounded-xl bg-[#EEFCFF] p-[0.375rem]">
@@ -437,7 +419,7 @@
       >
         <li>
           <a
-            href="help-center.html"
+            href="help-center"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -447,7 +429,7 @@
         </li>
         <li>
           <a
-            href="platform-status.html"
+            href="platform-status"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -457,7 +439,7 @@
         </li>
         <li>
           <a
-            href="partners.html"
+            href="partners"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -467,7 +449,7 @@
         </li>
         <li>
           <a
-            href="blog.html"
+            href="blog"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -477,7 +459,7 @@
         </li>
         <li>
           <a
-            href="single-post.html"
+            href="single-post"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -487,7 +469,7 @@
         </li>
         <li>
           <a
-            href="newsletter.html"
+            href="newsletter"
             class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
           >
             <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -499,7 +481,7 @@
     </li>
     <li class="group">
       <a
-        href="create.html"
+        href="create"
         class="flex items-center justify-between py-3.5 font-display text-base text-jacarta-700 hover:text-accent focus:text-accent dark:text-white dark:hover:text-accent dark:focus:text-accent lg:px-5"
         >Create</a
       >
