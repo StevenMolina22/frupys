@@ -4,7 +4,7 @@
 >
   <li>
     <a
-      href="maintenance.html"
+      href="maintenance"
       class="flex items-center justify-between rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="mr-4 font-display text-sm text-jacarta-700 dark:text-white"
@@ -18,7 +18,7 @@
   </li>
   <li>
     <a
-      href="case-studies.html"
+      href="case-studies"
       class="flex items-center justify-between rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="mr-4 font-display text-sm text-jacarta-700 dark:text-white"
@@ -32,7 +32,7 @@
   </li>
   <li>
     <a
-      href="single-case-study.html"
+      href="single-case-study"
       class="flex items-center justify-between rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="mr-4 font-display text-sm text-jacarta-700 dark:text-white"
@@ -46,7 +46,7 @@
   </li>
   <li>
     <a
-      href="careers.html"
+      href="careers"
       class="flex items-center justify-between rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="mr-4 font-display text-sm text-jacarta-700 dark:text-white"
@@ -60,7 +60,7 @@
   </li>
   <li>
     <a
-      href="item.html"
+      href="item"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -70,7 +70,7 @@
   </li>
   <li>
     <a
-      href="collections-wide-sidebar.html"
+      href="collections-wide-sidebar"
       class="flex items-center justify-between rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="mr-4 font-display text-sm text-jacarta-700 dark:text-white"
@@ -84,7 +84,7 @@
   </li>
   <li>
     <a
-      href="collections.html"
+      href="collections"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -94,7 +94,7 @@
   </li>
   <li>
     <a
-      href="collection.html"
+      href="collection"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -104,7 +104,7 @@
   </li>
   <li>
     <a
-      href="activity.html"
+      href="activity"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -114,7 +114,7 @@
   </li>
   <li>
     <a
-      href="rankings.html"
+      href="rankings"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -124,7 +124,7 @@
   </li>
   <li>
     <a
-      href="user.html"
+      href="user"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -134,7 +134,7 @@
   </li>
   <li>
     <a
-      href="edit-profile.html"
+      href="edit-profile"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -144,7 +144,7 @@
   </li>
   <li>
     <a
-      href="about.html"
+      href="about"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -155,7 +155,7 @@
 
   <li>
     <a
-      href="contact.html"
+      href="contact"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -165,7 +165,7 @@
   </li>
   <li>
     <a
-      href="wallet.html"
+      href="wallet"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -175,7 +175,7 @@
   </li>
   <li>
     <a
-      href="login.html"
+      href="login"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -185,7 +185,7 @@
   </li>
   <li>
     <a
-      href="404.html"
+      href="404"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"
@@ -195,7 +195,7 @@
   </li>
   <li>
     <a
-      href="tos.html"
+      href="tos"
       class="flex items-center rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
     >
       <span class="font-display text-sm text-jacarta-700 dark:text-white"

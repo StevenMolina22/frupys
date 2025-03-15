@@ -1,58 +1,67 @@
 ---
 interface Props {
-  id: number;
-  avatarSrc: string;
-  isVerified: boolean;
-  collectionName: string;
-  ethValue: string;
-  href?: string;
+    id: number;
+    avatarSrc: string;
+    isVerified: boolean;
+    collectionName: string;
+    ethValue: string;
+    href?: string;
 }
 
-const { id, avatarSrc, isVerified, collectionName, ethValue, href = "collection.html" } = Astro.props;
+const {
+    id,
+    avatarSrc,
+    isVerified,
+    collectionName,
+    ethValue,
+    href = "collection",
+} = Astro.props;
 ---
 
-<div class="flex rounded-2.5xl border border-jacarta-100 bg-white py-4 px-7 transition-shadow hover:shadow-lg dark:border-transparent dark:bg-jacarta-700">
-  <figure class="mr-4 shrink-0">
-    <a href={href} class="relative block">
-      <img
-        src={avatarSrc}
-        alt={`avatar ${id}`}
-        class="rounded-2l size-12 rounded-lg"
-        loading="lazy"
-      />
-      <div
-        class="absolute -left-3 top-1/2 flex h-6 w-6 -translate-y-2/4 items-center justify-center rounded-full border-2 border-white bg-jacarta-700 text-xs text-white dark:border-jacarta-600"
-      >
-        {id}
-      </div>
-      {isVerified && (
-        <div
-          class="absolute -left-3 top-[60%] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-green dark:border-jacarta-600"
-          data-tippy-content="Verified Collection"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-            class="h-[.875rem] w-[.875rem] fill-white"
-          >
-            <path fill="none" d="M0 0h24v24H0z"></path>
-            <path
-              d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
-            ></path>
-          </svg>
-        </div>
-      )}
-    </a>
-  </figure>
-  <div>
-    <a href={href} class="block">
-      <span
-        class="font-display font-semibold text-jacarta-700 hover:text-accent dark:text-white"
-      >{collectionName}</span
-      >
-    </a>
-    <span class="text-sm dark:text-jacarta-300">$ {ethValue}</span>
-  </div>
+<div
+    class="flex rounded-2.5xl border border-jacarta-100 bg-white py-4 px-7 transition-shadow hover:shadow-lg dark:border-transparent dark:bg-jacarta-700"
+>
+    <figure class="mr-4 shrink-0">
+        <a href={href} class="relative block">
+            <img
+                src={avatarSrc}
+                alt={`avatar ${id}`}
+                class="rounded-2l size-12 rounded-lg"
+                loading="lazy"
+            />
+            <div
+                class="absolute -left-3 top-1/2 flex h-6 w-6 -translate-y-2/4 items-center justify-center rounded-full border-2 border-white bg-jacarta-700 text-xs text-white dark:border-jacarta-600"
+            >
+                {id}
+            </div>
+            {
+                isVerified && (
+                    <div
+                        class="absolute -left-3 top-[60%] flex h-6 w-6 items-center justify-center rounded-full border-2 border-white bg-green dark:border-jacarta-600"
+                        data-tippy-content="Verified Collection"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            class="h-[.875rem] w-[.875rem] fill-white"
+                        >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
+                        </svg>
+                    </div>
+                )
+            }
+        </a>
+    </figure>
+    <div>
+        <a href={href} class="block">
+            <span
+                class="font-display font-semibold text-jacarta-700 hover:text-accent dark:text-white"
+                >{collectionName}</span
+            >
+        </a>
+        <span class="text-sm dark:text-jacarta-300">$ {ethValue}</span>
+    </div>
 </div>

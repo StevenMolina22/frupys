@@ -10,43 +10,46 @@ interface Props {
     };
 }
 
-const { title, image, href, category} = Astro.props
+const { title, image, href, category } = Astro.props;
 ---
+
 <article>
-  <div
-    class="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-700"
-  >
-    <figure class="relative">
-      <a href={href}>
-        <img
-          src={image}
-          alt="item 1"
-          class="swiper-lazy h-[430px] w-full object-cover"
-          height="430"
-          width="379"
-        />
-        <div class="swiper-lazy-preloader"></div>
-      </a>
-    </figure>
-    <div class="p-6">
-      <div class="flex">
-        <a href={category.href} class="shrink-0">
-          <img
-            src={category.image}
-            alt="avatar"
-            class="mr-4 h-10 w-10 rounded-full"
-          />
-        </a>
-        <div>
-          <a href="item.html" class="block">
-            <span
-              class="font-display text-lg leading-none text-jacarta-700 hover:text-accent dark:text-white"
-              >{title}</span
-            >
-          </a>
-          <a href={category.href} class="text-2xs text-accent">{category.name}</a>
+    <div
+        class="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-700"
+    >
+        <figure class="relative">
+            <a href={href}>
+                <img
+                    src={image}
+                    alt="item 1"
+                    class="swiper-lazy h-[430px] w-full object-cover"
+                    height="430"
+                    width="379"
+                />
+                <div class="swiper-lazy-preloader"></div>
+            </a>
+        </figure>
+        <div class="p-6">
+            <div class="flex">
+                <a href={category.href} class="shrink-0">
+                    <img
+                        src={category.image}
+                        alt="avatar"
+                        class="mr-4 h-10 w-10 rounded-full"
+                    />
+                </a>
+                <div>
+                    <a href="item" class="block">
+                        <span
+                            class="font-display text-lg leading-none text-jacarta-700 hover:text-accent dark:text-white"
+                            >{title}</span
+                        >
+                    </a>
+                    <a href={category.href} class="text-2xs text-accent"
+                        >{category.name}</a
+                    >
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </article>

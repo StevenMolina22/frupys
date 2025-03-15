@@ -2,7 +2,7 @@
   class="t-0 fixed left-0 z-10 flex w-full items-center justify-between bg-white p-6 dark:bg-jacarta-800 lg:hidden"
 >
   <!-- Mobile Logo -->
-  <a href="index.html" class="shrink-0">
+  <a href="/" class="shrink-0">
     <img
       src="img/logo-light.png"
       class="h-10 dark:hidden"

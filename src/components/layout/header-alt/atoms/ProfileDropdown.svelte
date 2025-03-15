@@ -52,7 +52,7 @@
     </div>
   </div>
   <a
-    href="user.html"
+    href="user"
     class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
   >
     <svg
@@ -72,7 +72,7 @@
     >
   </a>
   <a
-    href="edit-profile.html"
+    href="edit-profile"
     class="flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors hover:bg-jacarta-50 hover:text-accent focus:text-accent dark:hover:bg-jacarta-600"
   >
     <svg
