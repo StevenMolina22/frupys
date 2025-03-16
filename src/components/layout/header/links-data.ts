@@ -1,33 +1,5 @@
 export const homeDropdownLinks = [
   {
-    label: "Home 1",
-    href: "index",
-  },
-  {
-    label: "Home 1 RTL",
-    href: "index-rtl",
-  },
-  {
-    label: "Home 2",
-    href: "home-2",
-  },
-  {
-    label: "Home 3",
-    href: "home-3",
-  },
-  {
-    label: "Home 4",
-    href: "home-4",
-  },
-  {
-    label: "Home 5",
-    href: "home-5",
-  },
-  {
-    label: "Home 6",
-    href: "home-6",
-  },
-{
     label: "Gelato Parlor",
     href: "home-7",
   },
@@ -95,10 +67,6 @@ export const pagesDropdownLinks = [
     href: "activity",
   },
   {
-    label: "Rankings",
-    href: "rankings",
-  },
-  {
     label: "User",
     href: "user",
   },
@@ -159,10 +127,6 @@ export const resourcesLinks = [
   {
     href: "platform-status",
     label: "Platform Status",
-  },
-  {
-    href: "partners",
-    label: "Partners",
   },
   {
     href: "blog",

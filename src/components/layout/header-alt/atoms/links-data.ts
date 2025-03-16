@@ -95,10 +95,6 @@ export const pagesDropdownLinks = [
     href: "activity",
   },
   {
-    label: "Rankings",
-    href: "rankings",
-  },
-  {
     label: "User",
     href: "user",
   },
@@ -160,10 +156,7 @@ export const resourcesLinks = [
     href: "platform-status",
     label: "Platform Status",
   },
-  {
-    href: "partners",
-    label: "Partners",
-  },
+
   {
     href: "blog",
     label: "Blog",

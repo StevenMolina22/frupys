@@ -81,16 +81,6 @@
     </div>
     <!-- Actions -->
     <div class="ml-8 hidden lg:flex xl:ml-12">
-        <!-- Wallet -->
-        <a
-            href="#"
-            class="js-wallet group flex h-10 w-10 items-center justify-center rounded-full border border-jacarta-100 bg-white transition-colors hover:border-transparent hover:bg-accent focus:border-transparent focus:bg-accent dark:border-transparent dark:bg-white/[.15] dark:hover:bg-accent"
-            data-bs-toggle="modal"
-            data-bs-target="#walletModal"
-            aria-label="wallet"
-        >
-            <Tag />
-        </a>
         <!-- Profile -->
         <div class="js-nav-dropdown group-dropdown relative">
             <button

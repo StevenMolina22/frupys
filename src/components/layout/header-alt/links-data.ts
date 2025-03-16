@@ -56,7 +56,6 @@ export const exploreLinks = [
     bgColor: "bg-[#FFEEFA]",
     iconColor: "fill-[#F35BC7]",
   },
-
 ];
 
 export const resourcesLinks = [
@@ -66,11 +65,7 @@ export const resourcesLinks = [
   },
   {
     label: "Shop Status",
-    href: "shop-status",
-  },
-  {
-    label: "Partners",
-    href: "partners",
+    href: "#",
   },
   {
     label: "Blog",
