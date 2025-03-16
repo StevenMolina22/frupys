@@ -5,34 +5,34 @@ import HotBids from "../components/sections/HotBids.astro";
 import WalletModal from "../components/modals/WalletModal.astro";
 import BuyNowModal from "../components/modals/BuyNowModal.astro";
 import PlaceBidModal from "../components/modals/PlaceBidModal.astro";
-import StatTabs from "../components/sections/StatTabs.astro";
 ---
 
 <HomeLayout>
-  <main class="mt-24">
-    <section class="relative pt-12 pb-24 lg:py-24">
-      <picture class="pointer-events-none absolute inset-0 -z-10 dark:hidden">
-        <img
-          src="img/gradient_light.jpg"
-          alt="gradient"
-          class="h-full w-full"
-        />
-      </picture>
-      <div class="container">
-        <ItemInfo />
-        <StatTabs />
-      </div>
-    </section>
-    <HotBids />
-  </main>
+    <main class="mt-24">
+        <section class="relative pt-12 pb-24 lg:py-24">
+            <picture
+                class="pointer-events-none absolute inset-0 -z-10 dark:hidden"
+            >
+                <img
+                    src="img/gradient_light.jpg"
+                    alt="gradient"
+                    class="h-full w-full"
+                />
+            </picture>
+            <div class="container">
+                <ItemInfo />
+            </div>
+        </section>
+        <HotBids />
+    </main>
 
-  <WalletModal />
-  <BuyNowModal />
-  <PlaceBidModal />
+    <WalletModal />
+    <BuyNowModal />
+    <PlaceBidModal />
 
-  <script is:inline src="/js/countdown.bundle.js"></script>
-  <script is:inline src="/js/charts.bundle.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
-  ></script>
+    <script is:inline src="/js/countdown.bundle.js"></script>
+    <script is:inline src="/js/charts.bundle.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+    ></script>
 </HomeLayout>

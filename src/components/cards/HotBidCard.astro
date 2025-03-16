@@ -38,18 +38,18 @@ const { title, image, price, currentBid, likes } = Astro.props;
         <span
             class="flex items-center whitespace-nowrap rounded-md border border-jacarta-100 py-1 px-2 dark:border-jacarta-600"
         >
-            <span data-tippy-content="ETH">
+            <span data-tippy-content="Price">
                 <ETH />
             </span>
             <span class="text-sm font-medium tracking-tight text-green"
-                >{price}</span
+                >${price}</span
             >
         </span>
     </div>
     <div class="mt-2 text-sm">
-        <span class="dark:text-jacarta-300">Precio: </span>
+        <span class="dark:text-jacarta-300">Family Size: </span>
         <span class="text-jacarta-700 dark:text-jacarta-100"
-            >$ {currentBid}</span
+            >${currentBid}</span
         >
     </div>
     <div class="mt-8 flex items-center justify-between">
@@ -59,12 +59,12 @@ const { title, image, price, currentBid, likes } = Astro.props;
             data-bs-toggle="modal"
             data-bs-target="#placeBidModal"
         >
-            Lo quiero
+            Add to Cart
         </button>
         <div class="flex items-center space-x-1">
             <span
                 class="js-likes relative cursor-pointer before:absolute before:h-4 before:w-4 before:bg-[url('./img/heart-fill.svg')] before:bg-cover before:bg-center before:bg-no-repeat before:opacity-0"
-                data-tippy-content="Favorito1"
+                data-tippy-content="Favorite"
             >
                 <Heart />
             </span>
